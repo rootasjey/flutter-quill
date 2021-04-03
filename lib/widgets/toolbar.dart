@@ -470,7 +470,7 @@ Widget _selectHeadingStyleButtonBuilder(BuildContext context, Attribute? value,
           elevation: 0.0,
           fillColor: _valueToText[value] == _valueString[index]
               ? Theme.of(context).accentColor.withOpacity(0.4)
-              : Colors.white,
+              : theme.canvasColor,
           constraints: constraints,
           onPressed: () {
             onSelected(_valueAttribute[index]);
